@@ -1,31 +1,53 @@
 # newbie
-# gitÀ» ½ÃÀÛÇÏ´Â ¹æ¹ı
-1. gitÀ» ¼³Ä¡ÇÑ´Ù.
+# gitì„ ì‹œì‘í•˜ëŠ” ë°©ë²•
+
+1. gitì„ ì„¤ì¹˜í•œë‹¤.
+
 http://msysgit.github.com/
 
-2. cmd(terminal)Ã¢¿¡¼­ ÀÌ¸§, ¸ŞÀÏÁÖ¼Ò ¼³Á¤ÇÏ°í È®ÀÎ
-git config --global user.name "ÀÌ¸§"
-git config --global user.email "±êÇãºê ¸ŞÀÏÁÖ¼Ò" 
+
+2. cmd(terminal)ì°½ì—ì„œ ì´ë¦„, ë©”ì¼ì£¼ì†Œ ì„¤ì •í•˜ê³  í™•ì¸
+
+git config --global user.name "ì´ë¦„"
+
+git config --global user.email "ê¹ƒí—ˆë¸Œ ë©”ì¼ì£¼ì†Œ" 
+
 git config --list
 
-3. git Æú´õ¸¦ ¸¸µé »óÀ§Æú´õ·Î °¡¼­ gitÆú´õ¸¦ ¸¸µë
+
+3. git í´ë”ë¥¼ ë§Œë“¤ ìƒìœ„í´ë”ë¡œ ê°€ì„œ gití´ë”ë¥¼ ë§Œë“¬
+
 cd C:\
+
 mkdir git
 
-4. git Æú´õ·Î ÀÌµ¿ÇØ¼­ git À» ÀÌ¿ëÇÒ µğ·ºÅä¸®·Î ÁöÁ¤
+
+4. git í´ë”ë¡œ ì´ë™í•´ì„œ git ì„ ì´ìš©í•  ë””ë ‰í† ë¦¬ë¡œ ì§€ì •
+
 cd git
+
 git init 
 
-5. github ¿¡ »ı¼ºÇÑ ÀúÀå¼Òµé ³»·Á¹Ş±â, ÇØ´ç Æú´õ·Î ÀÌµ¿
+
+5. github ì— ìƒì„±í•œ ì €ì¥ì†Œë“¤ ë‚´ë ¤ë°›ê¸°, í•´ë‹¹ í´ë”ë¡œ ì´ë™
+
 git clone git://github.com/smallerhand/python1.git
+
 cd python1
 
-6. ³»°¡ ¸¸µç ÆÄÀÌ½ã ÆÄÀÏµé ÇØ´ç Æú´õ·Î ¿Å±ä ´ÙÀ½¿¡ add, commit, push
+
+6. ë‚´ê°€ ë§Œë“  íŒŒì´ì¬ íŒŒì¼ë“¤ í•´ë‹¹ í´ë”ë¡œ ì˜®ê¸´ ë‹¤ìŒì— add, commit, push
+
 git add *.py
+
 git commit -m all
+
 git push https://github.com/smallerhand/python1.git
 
-#ÀÌ»ó gitÀÇ Á¦ÀÏ basicÇÑ »ç¿ë¹ıÀÌ¾ú½À´Ï´Ù.
-#Âü°í
+#ì´ìƒ gitì˜ ì œì¼ basicí•œ ì‚¬ìš©ë²•ì´ì—ˆìŠµë‹ˆë‹¤.
+
+#ì°¸ê³ 
+
 https://nolboo.kim/blog/2013/10/06/github-for-beginner/
+
 https://git-scm.com/book/ko/v1/Git%EC%9D%98-%EA%B8%B0%EC%B4%88
