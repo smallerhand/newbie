@@ -44,6 +44,13 @@ git commit -m all
 
 git push https://github.com/smallerhand/python1.git
 
+
+7. github 상에서 python1 repository안에 있는 파일을 수정했을 때.
+
+cd python1
+
+git pull
+
 #이상 git의 제일 basic한 사용법이었습니다.
 
 #참고
