@@ -49,7 +49,7 @@ git push https://github.com/smallerhand/python1.git
 
 cd python1
 
-git pull
+git pull https://github.com/smallerhand/python1.git
 
 #이상 git의 제일 basic한 사용법이었습니다.
 
