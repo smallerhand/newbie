@@ -58,3 +58,5 @@ git pull https://github.com/smallerhand/python1.git
 https://nolboo.kim/blog/2013/10/06/github-for-beginner/
 
 https://git-scm.com/book/ko/v1/Git%EC%9D%98-%EA%B8%B0%EC%B4%88
+
+ㅇhello git
