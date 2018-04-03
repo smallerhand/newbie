@@ -29,8 +29,7 @@
 
 ### 6. 내가 만든 파이썬 파일들 해당 폴더로 옮긴 다음에 add, commit, push
 > git add *.py <br/>
->> ##### 만약 모든 형식의 파일을 올리고 싶다면, *.py 대신 -A 또는 --all을 씁니다. <br/>
->> git add -A 이렇게. <br/>
+> ##### 만약 모든 형식의 파일을 올리고 싶다면, *.py 대신 -A 또는 --all을 씁니다. git add -A 이렇게. <br/>
 > git commit -m all<br/>
 > git push https://github.com/smallerhand/python1.git<br/>
 
@@ -40,8 +39,8 @@
 > git pull https://github.com/smallerhand/python1.git <br/>
 
 
-####이상 git의 제일 basic한 사용법이었습니다.<br/>
-##참고<br/>
+#### 이상 git의 제일 basic한 사용법이었습니다.<br/>
+## 참고<br/>
 > ##### https://nolboo.kim/blog/2013/10/06/github-for-beginner/ <br/>
 > ##### https://git-scm.com/book/ko/v1/Git%EC%9D%98-%EA%B8%B0%EC%B4%88 <br/>
 
