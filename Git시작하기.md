@@ -1,21 +1,21 @@
-# newbie
-# git을 시작하는 방법
+# git을 시작하는 방법 
+##### (진짜 시작만 하는 거예요 ^^;;)
 
-1. git을 설치한다.
+### 1. git을 설치한다.
 
-http://msysgit.github.com/
+> http://msysgit.github.com/
 
 
-2. cmd(terminal)창에서 이름, 메일주소 설정하고 확인
+### 2. cmd(terminal)창에서 이름, 메일주소 설정하고 확인
 
-git config --global user.name "이름"
+> git config --global user.name "이름"
 
 git config --global user.email "깃허브 메일주소" 
 
 git config --list
 
 
-3. git 폴더를 만들 상위폴더로 가서 git폴더를 만듬
+### 3. git 폴더를 만들 상위폴더로 가서 git폴더를 만듬
 
 cd C:\
 
