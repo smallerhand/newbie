@@ -8,8 +8,8 @@
 
 ### 2. cmd(terminal)창에서 이름, 메일주소 설정하고 확인
 
-  > git config --global user.name "이름"
-  > git config --global user.email "깃허브 메일주소" 
+  > git config --global user.name "이름"<br/> 
+  > git config --global user.email "깃허브 메일주소" <br/> 
   > git config --list
 
 
