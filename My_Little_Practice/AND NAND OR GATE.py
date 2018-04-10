@@ -7,13 +7,13 @@ Created on Tue Apr 10 09:51:35 2018
 """
 
 def AND(a,b):
-    theta=1.8
+    theta=1.5
     w1=1;w2=1
     res=w1*a+w2*b>theta
     return(int(res))
 
 def NAND(a,b):
-    theta=-1.8
+    theta=-1.5
     w1=-1;w2=-1
     res=w1*a+w2*b>theta
     return(int(res))
