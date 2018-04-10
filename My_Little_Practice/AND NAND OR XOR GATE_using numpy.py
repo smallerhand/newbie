@@ -32,7 +32,7 @@ def OR(x1,x2):
     b=0
     tmp=np.sum(w*x)+b
     return(int(tmp>0))
-    
+     
 def XOR(x1,x2):
     x=np.array([NAND(x1,x2), OR(x1,x2)])
     w=np.array([1,1])
