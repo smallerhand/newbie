@@ -17,28 +17,28 @@ def AND(x1,x2):
     w=np.array([1,1])
     b=-1.5
     tmp=np.sum(w*x)+b
-    return(int(int(tmp>0)))
+    return(int(tmp>0))
 
 def NAND(x1,x2):
     x=np.array([x1,x2])
     w=np.array([-1,-1])
     b=1.5
     tmp=np.sum(w*x)+b
-    return(int(int(tmp>0)))
+    return(int(tmp>0))
 
 def OR(x1,x2):
     x=np.array([x1,x2])
     w=np.array([1,1])
     b=0
     tmp=np.sum(w*x)+b
-    return(int(int(tmp>0)))
+    return(int(tmp>0))
     
 def XOR(x1,x2):
     x=np.array([NAND(x1,x2), OR(x1,x2)])
     w=np.array([1,1])
     b=-1.5
     tmp=np.sum(w*x)+b    
-    return(int(int(tmp>0)))    
+    return(int(tmp>0))
 
 lst=[[0,0], [1,0], [0,1], [1,1]]
 
