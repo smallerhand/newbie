@@ -1,6 +1,5 @@
 import tensorflow as tf
 tf.reset_default_graph()     #그래프 초기화
-tf.set_random_seed(777) 
 import numpy as np
 import pandas as pd
 from sklearn import preprocessing
@@ -16,7 +15,7 @@ label=np.array([logical(i) for i in data[:,1]]).reshape(-1,1)
 print("malign counted ", sum(label), "not malign counted ", len(label)-sum(label))
 traindata=data2[:,2:]
 traindata = preprocessing.scale(traindata)
-sklearn_pca = sklearnPCA(n_components=15)
+sklearn_pca = sklearnPCA(n_components=16)
 traindata = sklearn_pca.fit_transform(traindata)
 datamerge=np.concatenate((label, traindata), axis=1)
 from sklearn.model_selection import train_test_split
@@ -31,22 +30,20 @@ v2data=validates[validates[:,0]==0, 1:]
 v1label=np.array(np.repeat(1, v1data.shape[0])).reshape(-1, 1)
 v2label=np.array(np.repeat(0, v2data.shape[0])).reshape(-1, 1)
 
-X=tf.placeholder(tf.float32, [None, 15])
+X=tf.placeholder(tf.float32, [None, 16])
 Y=tf.placeholder(tf.float32, [None, 1])
-w1=tf.Variable(tf.random_normal([15, 128]))
-b1=tf.Variable(tf.random_normal([128]))
+w1=tf.Variable(tf.random_normal([16, 32]))
+b1=tf.Variable(tf.random_normal([32]))
 l1=tf.nn.sigmoid(tf.matmul(X, w1)+b1)
-w2=tf.Variable(tf.random_normal([128, 256]))
-b2=tf.Variable(tf.random_normal([256]))
+w2=tf.Variable(tf.random_normal([32, 64]))
+b2=tf.Variable(tf.random_normal([64]))
 l2=tf.nn.sigmoid(tf.matmul(l1, w2)+b2)
-"""
-w3=tf.Variable(tf.random_normal([256, 256]))
-b3=tf.Variable(tf.random_normal([256]))
-l3=tf.sigmoid(tf.matmul(l2, w3)+b3)
-"""
-w3=tf.Variable(tf.random_normal([256, 1]))
-b3=tf.Variable(tf.random_normal([1]))
-h=tf.nn.sigmoid(tf.matmul(l2, w3)+b3)
+w3=tf.Variable(tf.random_normal([64, 128]))
+b3=tf.Variable(tf.random_normal([128]))
+l3=tf.nn.sigmoid(tf.matmul(l2, w3)+b3)
+w4=tf.Variable(tf.random_normal([128, 1]))
+b4=tf.Variable(tf.random_normal([1]))
+h=tf.nn.sigmoid(tf.matmul(l3, w4)+b4)
 """
 cost = -tf.reduce_mean(Y * tf.log(h) + (1 - Y) * tf.log(1 - h))
 cost=tf.reduce_mean((Y-h)**2)
@@ -59,7 +56,7 @@ predicted = tf.cast(h > 0.5, dtype=tf.float32)
 accuracy = tf.reduce_mean(tf.cast(tf.equal(predicted, Y), dtype=tf.float32))
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
-    for i in range(1001):
+    for i in range(1501):
         _, c=sess.run([train, cost], feed_dict={X:train_data, Y:train_label})
         if i%100==0:
             a, c=sess.run([accuracy * 100, cost], feed_dict={X:validate_data, Y:validate_label})
