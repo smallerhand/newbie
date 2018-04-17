@@ -1,7 +1,6 @@
 import tensorflow as tf
 tf.reset_default_graph()     #그래프 초기화
 import numpy as np
-import pandas as pd
 from sklearn import preprocessing
 from sklearn.decomposition import PCA as sklearnPCA
 data = np.genfromtxt('/Users/kimseunghyuck/desktop/wisc_bc_data.csv', dtype=(str), delimiter=',', skip_header=1, encoding='euc-kr')
