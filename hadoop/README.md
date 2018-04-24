@@ -113,20 +113,18 @@ customize add 선택, developer> developer tool 설치
 계정이름은 root(리눅스,유닉스 슈퍼계정은 항상 root), pw는 pw로
 <br>
 terminal 열어서 ls, cd, (다시) ls
-<br>
-<br>
-<br>
 </p>
-
 <code>
 ls -al
 ll
 cd
-
-
 </code>
 
-
+### 6. 네트워크 설정
+<code>
+cd /etc/sysconfig/network-scripts
+pwd
+</code>
 
 
 
