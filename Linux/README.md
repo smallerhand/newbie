@@ -1,1 +1,60 @@
+### windows에 하둡 설치하기
+
+<p>
+
+1. 준비물
+
 VirtualBox-5.1.6-110634-Win.exe
+<br>
+위 VirtualBox 설치
+<br>
+C:\hadoop 폴더에 아래 5개 파일 준비해놓는다.
+</p>
+<pre>
+apache-hive-2.0.0-bin.tar.gz
+CentOS-6.4-x86_64-bin-DVD1.iso
+hadoop-2.7.2.tar.gz
+jdk-7u80-linux-x64.tar.gz
+protobuf-2.5.0.tar.gz
+</pre>
+
+<p>
+
+2. 환경설정
+
+virtualbox 파일> 환경설정> 입력> 가상머신> 호스트 키 조합 
+<br>
+
+확인 혹은 수정
+<br>
+
+환경설정> 네트워크> 호스트전용 네트워크> 편집모양 아이콘> 어댑터
+<br>
+여기에 있는 IPv4주소는 이 버츄얼머신 안에서만 사용.
+<br>
+DHCP 서버
+<br>
+서버사용 체크 확인
+<br>
+최저주소한계~최고주소한계 사이에서만 사용
+<br>
+간혹 충돌되면 이 주소 안에서 바꿔서 쓰면 됨.
+</p>
+
+
+<p>
+
+3. 새로만들기(버츄얼박스 왼쪽위 버튼)
+
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+</p>
