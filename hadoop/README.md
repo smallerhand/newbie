@@ -129,9 +129,15 @@ cd /etc/sysconfig/network-scripts
 pwd
 ls
 (ifcfg-eth0, 1 있는지 확인)
-
+cat ifcfg-eth0
+cat ifcfg-eth1
+(ifcfg-eth0의 onboot=no를 이따가 yes로 바꿀 것임)
+(ifcfg-eth1의 onboot=no를 이따가 yes로 바꾸고, nm_controlled=yes는 놔두고, bootproto=dhcp를 none으로 바꿀 것임)
 </code>
 </pre>
+<p>
+ifcfg-eth1의 역할은 vm안에 생성한 server들끼리 통신하기 위한 용도
+<br>
 
-
+</p>
 
