@@ -215,6 +215,7 @@ total 149940
 </pre>
 
 <pre>
+bin 디렉토리를 어디서든 들어갈 수 있게 설정
 <code>
 vi /etc/profile
 G
@@ -223,6 +224,29 @@ export JAVA_HOME=/usr/java/jdk1.7.0_80
 export PATH=$PATH:$JAVA_HOME/bin
 export CLASS_PATH="."
 esc :wq
+source /etc/profile
+[root@hadoopserver jdk1.7.0_80]# cd bin
+[root@hadoopserver bin]# pwd
+/usr/java/jdk1.7.0_80/bin
+[root@hadoopserver bin]# ls
+
+java -version
+which java
+
+[root@hadoopserver java]# update-alternatives --install "/usr/bin/java" "java" "/usr/java/jdk1.7.0_80/bin/java" 1
+[root@hadoopserver java]# update-alternatives --config java
+
+There are 3 programs which provide 'java'.
+
+  Selection    Command
+-----------------------------------------------
+*+ 1           /usr/lib/jvm/jre-1.7.0-openjdk.x86_64/bin/java
+   2           /usr/lib/jvm/jre-1.6.0-openjdk.x86_64/bin/java
+   3           /usr/java/jdk1.7.0_80/bin/java
+
+Enter to keep the current selection[+], or type selection number: 3
+
+java -version
 </code>
 </pre>
 
