@@ -148,9 +148,24 @@ ifcfg-eth1의 역할은 vm안에 생성한 server들끼리 통신하기 위한 용도
 vi ifcfg-eth0
 방향키로 원하는 위치로 가서 cw누르면 지워짐. 그리고 원하는 키워드 입력.
 
+제일 아래줄로 가려면 
+G
+한 줄 추가하려면 
+o
 취소하고 나갈 때는
 esc키 :q!
 저장하고 나갈 때는
 esc키 :wq
+
+(저장하고 나서)
+service network restart
+(인터넷 되는지 확인)
+cat /etc/hosts
+vi /etc/hosts
 </code>
 </pre>
+
+
+
+
+
