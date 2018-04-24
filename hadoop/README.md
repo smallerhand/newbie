@@ -247,6 +247,15 @@ There are 3 programs which provide 'java'.
 Enter to keep the current selection[+], or type selection number: 3
 
 java -version
+
+protobuf 옮겨서 압축풀고 설치
+(쌤 파일에서 프로토콜 버퍼 부분 확인)
+./configure
+make
+make install
+protoc --version
+(c++에러나서 아래 인스톨)
+yum install gcc-c++
 </code>
 </pre>
 
