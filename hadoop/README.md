@@ -124,6 +124,9 @@ cd
 <code>
 cd /etc/sysconfig/network-scripts
 pwd
+ls
+(ifcfg-eth0, 1 있는지 확인)
+
 </code>
 
 
