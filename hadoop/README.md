@@ -263,10 +263,13 @@ yum install gcc-c++
 
 (하둡 데몬 시작 중에서 아래꺼는 처음 한번만)
 [hadoop@hadoopserver hadoop]$ hdfs namenode -format
-
-
 </code>
 </pre>
+<pre>
+아래는 맥 유저용
+https://www.slideshare.net/SunilkumarMohanty3/install-apache-hadoop-on-mac-os-sierra-76275019
+</pre>
+
 
 
 
