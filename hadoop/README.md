@@ -114,13 +114,16 @@ customize add 선택, developer> developer tool 설치
 <br>
 terminal 열어서 ls, cd, (다시) ls
 </p>
+<pre>
 <code>
 ls -al
 ll
 cd
 </code>
+</pre>
 
 ### 6. 네트워크 설정
+<pre>
 <code>
 cd /etc/sysconfig/network-scripts
 pwd
@@ -128,7 +131,7 @@ ls
 (ifcfg-eth0, 1 있는지 확인)
 
 </code>
-
+</pre>
 
 
 
