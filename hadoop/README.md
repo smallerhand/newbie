@@ -254,8 +254,17 @@ protobuf 옮겨서 압축풀고 설치
 make
 make install
 protoc --version
+(libprotoc 2.5.0 나오면 잘 된거)
 (c++에러나서 아래 인스톨)
 yum install gcc-c++
+
+(유저 그룹 및 유저 생성)
+(위에 시스템 눌러서 사용자 전환 -> hadoop 으로 로그인)
+
+(하둡 데몬 시작 중에서 아래꺼는 처음 한번만)
+[hadoop@hadoopserver hadoop]$ hdfs namenode -format
+
+
 </code>
 </pre>
 
