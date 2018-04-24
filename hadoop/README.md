@@ -166,10 +166,12 @@ vi /etc/hosts
 (앞에서 customize add> development tools 선택 안 했으면)
 yum -y install gcc make kernel-devel kernel sources kernel-headers
 yum -y groupinstall "Development Tools"
-
 </code>
 </pre>
 
-
-
-
+### 7. 장치
+<p>
+장치> 게스트 확장 CD이미지 삽입> 확장> run
+<br>
+terminal에서 reboot
+</p>
