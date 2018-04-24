@@ -169,9 +169,64 @@ yum -y groupinstall "Development Tools"
 </code>
 </pre>
 
-### 7. 장치
+### 7. 확장
 <p>
 장치> 게스트 확장 CD이미지 삽입> 확장> run
 <br>
 terminal에서 reboot
+<br>
+방화벽 중지
+<br>
+iptables -L
+<br>
+iptables -F
+<br>
+iptables -L
+<br>
+ls /media/sf_hadoop
+<br>
+jdk설정
+<br>
+java -version
+<br>
+mkdir -p /usr/java
 </p>
+
+<pre>
+파일 옮기기
+<code>
+[root@hadoopserver ~]# cp /media/sf_hadoop/jdk-7u80-linux-x64.tar.gz /usr/java
+[root@hadoopserver ~]# cd /usr/java
+[root@hadoopserver java]# ls
+jdk-7u80-linux-x64.tar.gz
+[root@hadoopserver java]# ll
+total 149940
+-rwxr-x---. 1 root root 153530841 Apr 24 15:49 jdk-7u80-linux-x64.tar.gz
+[root@hadoopserver java]# 
+</code>
+</pre>
+
+<pre>
+압축 풀기
+<code>
+[root@hadoopserver java]# cd /usr/java
+[root@hadoopserver java]# tar xvfz jdk-7u80-linux-x64.tar.gz 
+</code>
+</pre>
+
+<pre>
+<code>
+vi /etc/profile
+G
+o
+export JAVA_HOME=/usr/java/jdk1.7.0_80
+export PATH=$PATH:$JAVA_HOME/bin
+export CLASS_PATH="."
+esc :wq
+</code>
+</pre>
+
+
+
+
+
