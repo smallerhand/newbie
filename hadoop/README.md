@@ -86,17 +86,39 @@ DHCP 서버
 <br>
 공유폴더> 공유 추가 아이콘> 
 <br>
-폴더 경로: 기타 클릭, C:\hadoop 선택
-<br>
-
-
-
-<br>
-
-<br>
-
+폴더 경로: 기타 클릭, C:\hadoop 선택, 자동 마운트 클릭, ok
 <br>
 </p>
+
+<p>
+
+### 5. 시작 (버츄얼머신 위에 시작 버튼)
+
+<br>
+시동디스크 선택
+<br>
+오른쪽 폴더 모양 클릭
+<br>
+centos iso 파일 선택, 열기, 시작, 엔터
+<br>
+스킵
+<br>
+언어는 US English로
+<br>
+Yes
+<br>
+hostname: hadoopserver
+<br>
+Asia: Seoul
+<br>
+id/pw 입력
+<br>
+desktop으로 선택
+customize add 선택, developer> developer 설치
+</p>
+
+
+
 
 
 
