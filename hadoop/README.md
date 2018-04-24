@@ -107,9 +107,24 @@ Asia: Seoul
 id/pw 입력
 <br>
 desktop으로 선택
+<br>
 customize add 선택, developer> developer tool 설치
+<br>
+계정이름은 root(리눅스,유닉스 슈퍼계정은 항상 root), pw는 pw로
+<br>
+terminal 열어서 ls, cd, (다시) ls
+<br>
+<br>
+<br>
 </p>
 
+<code>
+ls -al
+ll
+cd
+
+
+</code>
 
 
 
