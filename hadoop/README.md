@@ -141,7 +141,16 @@ IPADDR=192.168.56.101 추가)
 </pre>
 <p>
 ifcfg-eth1의 역할은 vm안에 생성한 server들끼리 통신하기 위한 용도
-<br>
-
 </p>
 
+<pre>
+<code>
+vi ifcfg-eth0
+방향키로 원하는 위치로 가서 cw누르면 지워짐. 그리고 원하는 키워드 입력.
+
+취소하고 나갈 때는
+esc키 :q!
+저장하고 나갈 때는
+esc키 :wq
+</code>
+</pre>
