@@ -108,7 +108,7 @@ id/pw 입력
 <br>
 desktop으로 선택
 <br>
-customize add 선택, developer> developer tool 설치
+customize add 선택, developer> development tools 설치
 <br>
 계정이름은 root(리눅스,유닉스 슈퍼계정은 항상 root), pw는 pw로
 <br>
@@ -162,9 +162,13 @@ service network restart
 (인터넷 되는지 확인)
 cat /etc/hosts
 vi /etc/hosts
+
+(앞에서 customize add> development tools 선택 안 했으면)
+yum -y install gcc make kernel-devel kernel sources kernel-headers
+yum -y groupinstall "Development Tools"
+
 </code>
 </pre>
-
 
 
 
