@@ -132,7 +132,11 @@ ls
 cat ifcfg-eth0
 cat ifcfg-eth1
 (ifcfg-eth0의 onboot=no를 이따가 yes로 바꿀 것임)
-(ifcfg-eth1의 onboot=no를 이따가 yes로 바꾸고, nm_controlled=yes는 놔두고, bootproto=dhcp를 none으로 바꿀 것임)
+(ifcfg-eth1의 onboot=no를 이따가 yes로 바꾸고, 
+nm_controlled=yes는 놔두고, 
+bootproto=dhcp를 none으로 바꾸고, 
+NETMASK=255.255.255.0 추가,
+IPADDR=192.168.56.101 추가)
 </code>
 </pre>
 <p>
