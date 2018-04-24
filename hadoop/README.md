@@ -3,7 +3,6 @@
 <p>
 
 ### 1. 준비물
-
 VirtualBox-5.1.6-110634-Win.exe
 <br>
 위 VirtualBox 설치
@@ -21,7 +20,6 @@ protobuf-2.5.0.tar.gz
 <p>
 
 ### 2. 환경설정
-
 virtualbox 파일> 환경설정> 입력> 가상머신> 호스트 키 조합 
 <br>
 
@@ -45,7 +43,6 @@ DHCP 서버
 <p>
 
 ### 3. 새로만들기(버츄얼박스 왼쪽위 버튼)
-
 이름에 hadoopserver 입력
 <br>
 종류: 리눅스
@@ -70,7 +67,6 @@ DHCP 서버
 <p>
 
 ### 4. 설정
-
 <br>
 일반> 고급> 클립보드 공유: 양방향/ 드래그앤드롭: 양방향
 <br>
@@ -93,7 +89,6 @@ DHCP 서버
 <p>
 
 ### 5. 시작 (버츄얼머신 위에 시작 버튼)
-
 <br>
 시동디스크 선택
 <br>
@@ -114,7 +109,7 @@ Asia: Seoul
 id/pw 입력
 <br>
 desktop으로 선택
-customize add 선택, developer> developer 설치
+customize add 선택, developer> developer tool 설치
 </p>
 
 
