@@ -19,3 +19,4 @@ for i in lst:
         r-=s
         s=0
 print(r)
+
