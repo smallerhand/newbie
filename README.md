@@ -8,7 +8,7 @@
 
 ### 2. cmd(terminal)창에서 이름, 메일주소 설정하고 확인 <br/>
 > git config --global user.name "이름" <br/> 
-> git config --global user.email "깃허브 메일주소" <br/> 
+> git config --global user.email 깃허브 메일주소 <br/> 
 > git config --list <br/>
 
 ### 3. git 폴더를 만들 상위폴더로 가서 git폴더를 만듬 <br/>
