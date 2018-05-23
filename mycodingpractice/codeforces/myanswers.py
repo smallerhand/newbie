@@ -8,4 +8,14 @@ if (A >= 4) and (A%2==0):
 else :
     print('no')
     
-#
+#A. Adaptation Stories
+A=int(input())
+lst=input().split(' ')
+s=0
+r=0
+for i in lst:
+    s+=int(i)
+    if s<0:
+        r-=s
+        s=0
+print(r)
