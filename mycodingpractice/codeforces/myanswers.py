@@ -20,3 +20,16 @@ for i in lst:
         s=0
 print(r)
 
+#A. Theatre Square
+lst=input().split(' ')
+
+x = int(lst[0])/int(lst[2])
+if x%1!=0:
+    x = int(x+1)
+
+y = int(lst[1])/int(lst[2])
+if y%1!=0:
+    y = int(y+1)
+    
+print(int(x*y))
+
