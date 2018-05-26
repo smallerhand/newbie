@@ -46,4 +46,31 @@ for i in range(n):
     else:
         print(lst[i])
 
+#A. Next Round
+n, k=map(int, input().split(' '))
+if n < k:
+    z = n
+    n = k
+    k = z
+
+lst = input().split(' ')
+a = int(lst[k-1])
+output = 0
+for i in lst:
+    if int(i)>0:
+        if int(i)>=a:
+            output+=1
+print(output)            
+        
+#A. String Task (아직 작성중)
+A = input()
+A = A.lower()
+lst=['.']
+for i in A:
+    if i not in  ['a','o','y','e','u','i']:
+        lst.append(i)
+        lst.append('.')
+
+print(lst)
+print(output)
 
