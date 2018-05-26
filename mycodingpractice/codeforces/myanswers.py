@@ -33,3 +33,17 @@ if y%1!=0:
     
 print(int(x*y))
 
+#A. Way Too Long Words
+n=int(input())
+lst=dict()
+
+for i in range(n):
+    lst[i]=input()
+
+for i in range(n):
+    if len(lst[i])>10:
+        print(lst[i][0]+str(len(lst[i])-2)+lst[i][-1])
+    else:
+        print(lst[i])
+
+
