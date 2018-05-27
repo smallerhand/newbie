@@ -65,12 +65,16 @@ print(output)
 #A. String Task (아직 작성중)
 A = input()
 A = A.lower()
-lst=['.']
+str = ''
 for i in A:
     if i not in  ['a','o','y','e','u','i']:
-        lst.append(i)
-        lst.append('.')
+        str += '.'
+        str += i
 
-print(lst)
-print(output)
+print(str)
+
+#A. Domino piling
+
+
+
 
