@@ -74,7 +74,10 @@ for i in A:
 print(str)
 
 #A. Domino piling
+m, n=map(int, input().split(' '))
+print(int(m*n/2))
 
+#A. Team
 
 
 
