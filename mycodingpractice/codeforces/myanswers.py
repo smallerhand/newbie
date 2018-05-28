@@ -1,5 +1,5 @@
 #www.codeforces.com
-#A. Watermelon 
+#4A. Watermelon 
 #4이상의 짝수면 yes
 
 A = int(input())
@@ -20,7 +20,7 @@ for i in lst:
         s=0
 print(r)
 
-#A. Theatre Square
+#1A. Theatre Square
 lst=input().split(' ')
 
 x = int(lst[0])/int(lst[2])
@@ -33,7 +33,7 @@ if y%1!=0:
     
 print(int(x*y))
 
-#A. Way Too Long Words
+#71A. Way Too Long Words
 n=int(input())
 lst=dict()
 
@@ -46,7 +46,7 @@ for i in range(n):
     else:
         print(lst[i])
 
-#A. Next Round
+#158A. Next Round
 n, k=map(int, input().split(' '))
 if n < k:
     z = n
@@ -62,7 +62,7 @@ for i in lst:
             output+=1
 print(output)            
         
-#A. String Task (아직 작성중)
+#118A. String Task
 A = input()
 A = A.lower()
 str = ''
@@ -73,11 +73,54 @@ for i in A:
 
 print(str)
 
-#A. Domino piling
+#50A. Domino piling
 m, n=map(int, input().split(' '))
 print(int(m*n/2))
 
-#A. Team
+#231A. Team
+n=int(input())
+output=0
+for i in range(n):
+    a, b, c = map(int, input().split(' '))
+    if a+b+c>=2:
+        output+=1
+print(output)
 
+#282A. Bit++
+n=int(input())
+output=0
+for i in range(n):
+    op = input()
+    if '--' in op:
+        output -=1
+    else:
+        output +=1
+print(output)
 
+#96A. Football
+inp=input()
+for i in range(len(inp)):
+    if inp[i:i+7]=='0000000':
+        print('YES')
+        break;
+    elif inp[i:i+7]=='1111111':
+        print('YES')
+        break;
+    elif i == len(inp)-1:
+        print('NO')
+        
+#112A. Petya and Strings
+l1=input().lower()
+l2=input().lower()
 
+alp='abcdefghijklmnopqrstuvwxyz'
+
+for i in range(len(l1)):
+    if alp.index(l1[i])>alp.index(l2[i]):
+        print(1)
+        break;
+    elif alp.index(l1[i])<alp.index(l2[i]):
+        print(-1)
+        break;
+    elif i == len(l1)-1:
+        print(0)
