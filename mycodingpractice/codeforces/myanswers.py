@@ -161,8 +161,48 @@ for i in range(n-1):
         output += 1
 print(output)
 
+#281A. Word Capitalization
+alp='abcdefghijklmnopqrstuvwxyz'
+ALP='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+s = input()
+output = ALP[(alp+ALP).index(s[0])%26]
+for i in s[1:]:
+    output += i
+print(output)
 
+#158B. Taxi (예시 답은 맞게 나오는데 제출하면 wrong. 다시 풀어야 함.)
+n = int(input())
+s = input().split(' ')
+lst = [int(i) for i in s]
 
+n1 = lst.count(1)
+n2 = lst.count(2)
+n3 = lst.count(3)
+n4 = lst.count(4)
+output = n4
+n4 = 0
+min1 = min(n1, n3)
+output += min1
+n1 -= min1
+n3 -= min1
+int2 = int(n2/2)
+output += int2
+n2 -= 2*int2
+if n1 == 0:
+    output += n3
+    if n2 == 1:
+        output += 1
+elif n1%4 == 0:
+    output += n1/4
+    if n2 == 1:
+        output += 1
+elif n1%4 == 3:
+    output += int(n1/4)+1
+else:
+    output += int(n1/4)+1        
+
+print(output)
+    
 
 
 
