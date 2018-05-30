@@ -151,7 +151,6 @@ else:
 print(output)
 
 #266A. Stones on the Table 
-#(Accepted 뜨긴 했는데 문자 3개 인 것에 대해 충분히 고려를 안했는데 괜찮은지 아리까리)
 n=int(input())
 s=input()
 output = 0
