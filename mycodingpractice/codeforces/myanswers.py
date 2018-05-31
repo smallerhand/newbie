@@ -267,10 +267,10 @@ elif s[0] in alp:
         else:
             print(s)
             break;
-elif s[1] in ALP:
-    for i in range(len(s)-2):
-        if s[i+2] in ALP:
-            if i  == len(s)-3:
+else:
+    for i in range(len(s)-1):
+        if s[i+1] in ALP:
+            if i  == len(s)-2:
                 result = s[0]
                 for j in s[1:]:
                     result += alp[ALP.index(j)]
@@ -279,6 +279,5 @@ elif s[1] in ALP:
         else:
             print(s)
             break;
-else:
-    print(s)
+
         
