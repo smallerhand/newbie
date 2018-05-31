@@ -169,6 +169,36 @@ for i in s[1:]:
     output += i
 print(output)
 
+#158B. Taxi
+n = int(input())
+s = input().split(' ')
+lst = [int(i) for i in s]
+
+n1 = lst.count(1)
+n2 = lst.count(2)
+n3 = lst.count(3)
+n4 = lst.count(4)
+output4 = n4
+n4 = 0
+output2, n2 = divmod(n2, 2)
+if n2 == 1:
+    n1 -= 2
+    output2 += 1
+min13=min(n1, n3)
+output13 = min13
+n1 -= min13
+n3 -= min13
+if n1 == 0:
+    output13 += n3
+else:
+    div, mod = divmod(n1, 4)
+    if mod == 0:
+        output13 += div
+    else:
+        output13 += div + 1
+output = sum([output4, output2, output13])
+print(output)
+    
 #116A. Team
 n = int(input())
 total = [0]
@@ -179,41 +209,13 @@ for i in range(n):
 print(max(total))
 
 #263A. Beautiful Matrix
-
-
-#158B. Taxi (예시 답은 맞게 나오는데 제출하면 wrong. 다시 풀어야 함.)
-n = int(input())
-s = input().split(' ')
-lst = [int(i) for i in s]
-
-n1 = lst.count(1)
-n2 = lst.count(2)
-n3 = lst.count(3)
-n4 = lst.count(4)
-output = n4
-n4 = 0
-min1 = min(n1, n3)
-output += min1
-n1 -= min1
-n3 -= min1
-int2 = int(n2/2)
-output += int2
-n2 -= 2*int2
-if n1 == 0:
-    output += n3
-    if n2 == 1:
-        output += 1
-elif n1%4 == 0:
-    output += n1/4
-    if n2 == 1:
-        output += 1
-elif n1%4 == 3:
-    output += int(n1/4)+1
-else:
-    output += int(n1/4)+1        
-
-print(output)
-    
+a, b = 0, 0
+for i in range(5):
+    c1, c2, c3, c4, c5 = map(int, input().split(' '))
+    lst = [c1, c2, c3, c4, c5]
+    if sum(lst)==1:
+        a = i+1; b = lst.index(1)+1
+print(abs(a-3)+abs(b-3))
 
 
 
