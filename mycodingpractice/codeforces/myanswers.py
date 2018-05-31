@@ -217,5 +217,31 @@ for i in range(5):
         a = i+1; b = lst.index(1)+1
 print(abs(a-3)+abs(b-3))
 
-
+#58A. Chat room
+s = input()
+n = len(s)
+result = False
+for i in range(n):
+    if s[i] =='h':
+        for j in range(n-i-1):
+            if s[i+j+1] =='e':
+                for k in range(n-i-j-2):
+                    if s[i+j+k+2] =='l':
+                        for l in range(n-i-j-k-3):
+                            if s[i+j+k+l+3] == 'l':
+                                for m in range(n-i-j-k-l-4):
+                                    if s[i+j+k+l+m+4] =='o':
+                                        result = True
+                                        print('YES')
+                                        break;
+                                if result == True:
+                                    break;
+                        if result == True:
+                            break;
+                if result == True:
+                    break;
+        if result == True:
+            break;
+    elif i == n-1:
+        print('NO')
 
