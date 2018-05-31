@@ -245,3 +245,40 @@ for i in range(n):
     elif i == n-1:
         print('NO')
 
+#131A. cAPS lOCK (wrong)
+s = input()
+alp='abcdefghijklmnopqrstuvwxyz'
+ALP='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+if len(s) == 1:
+    if s in alp:
+        print(ALP[alp.index(s)])
+    else:
+        print(s)
+elif s[0] in alp:
+    for i in range(len(s)-1):
+        if s[i+1] in ALP:
+            if i == len(s)-2:
+                result = ALP[alp.index(s[0])]
+                for j in s[1:]:
+                    result += alp[ALP.index(j)]
+                print(result)
+                break;
+        else:
+            print(s)
+            break;
+elif s[1] in ALP:
+    for i in range(len(s)-2):
+        if s[i+2] in ALP:
+            if i  == len(s)-3:
+                result = s[0]
+                for j in s[1:]:
+                    result += alp[ALP.index(j)]
+                print(result)
+                break;
+        else:
+            print(s)
+            break;
+else:
+    print(s)
+        
