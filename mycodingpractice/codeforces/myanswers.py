@@ -169,6 +169,18 @@ for i in s[1:]:
     output += i
 print(output)
 
+#116A. Team
+n = int(input())
+total = [0]
+for i in range(n):
+    a, b = map(int, input().split(' '))
+    total.append(total[-1]-a)
+    total.append(total[-1]+b)
+print(max(total))
+
+#263A. Beautiful Matrix
+
+
 #158B. Taxi (예시 답은 맞게 나오는데 제출하면 wrong. 다시 풀어야 함.)
 n = int(input())
 s = input().split(' ')
