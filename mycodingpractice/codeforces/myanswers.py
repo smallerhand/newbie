@@ -246,7 +246,19 @@ for i in range(n):
         print('NO')
 
 #122A. Lucky Division
+n=int(input())
+lst=[4,7,44,77,47,444,477,747,774,447,744,474,777]
+for i in lst:
+    if n%i==0:
+        print('YES')
+        break;
+    elif i == 777:
+        print('NO')
 
+#100. A+B (ACMSGURU)
+A, B = map(int, input().split(' '))
+output = A+B
+print(output)
 
 #131A. cAPS lOCK (wrong)
 s = input()
@@ -274,8 +286,8 @@ else:
     for i in range(len(s)-1):
         if s[i+1] in ALP:
             if i  == len(s)-2:
-                result = s[0]
-                for j in s[1:]:
+                result = ''
+                for j in s:
                     result += alp[ALP.index(j)]
                 print(result)
                 break;
