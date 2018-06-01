@@ -311,3 +311,91 @@ if result == True:
     print('YES')
 else:
     print('NO')
+
+
+#A. Diverse Team
+n, k = map(int, input().split(' '))
+if n < k:
+    z = n
+    n = k
+    k = z
+
+s = input().split(' ')
+lst = [int(i) for i in s]
+lst2 = list(set(lst))
+
+if len(lst2) < k:
+    print('NO')
+else:
+    print('YES')
+    res = ''
+    for j in range(k):
+        res += str(lst.index(lst2[-j-1])+1)+' '
+    print(res)
+    
+#B. Substrings Sort(Wrong in 11)
+n = int(input())
+lst=[]
+for i in range(n):
+    lst.append(input())
+if n==1:
+    print(lst[0])
+else:    
+    lst = sorted(lst, key=len)
+    for j in range(n-1):
+        if lst[j] in lst[j+1]:
+            if j == n-2:
+                print('YES')
+                for k in lst:
+                    print(k)
+                break;
+        else:
+            print('NO')
+            break;
+
+#E. Divisibility by 25(error)
+n = input()
+if len(n) < 2 :
+    print(-1)
+elif len(n) == 2:
+    if n in ['25', '50', '75']:
+        print(0)
+    elif n in ['52', '57']:
+        print(1)
+    else:
+        print(-1)
+else:
+    if n[-2:] in ['25', '50', '75', '00']:
+        print(0)
+    else:
+        lst = [int(i) for i in n]
+        n0 = lst.count(0)
+        n2 = lst.count(2)
+        n5 = lst.count(5)
+        n7 = lst.count(7)
+        if n0>=2 or (n0>=1 and n5>=1) or (n2>=1 and n5>=1) or (n5>=1 and n7>=1):
+            lst0, lst2, lst5, lst7 = [], [], [], []
+            for i in range(n0):
+                lst0.append(lst.index(0))
+            for i in range(n2):
+                lst2.append(lst.index(2))
+            for i in range(n5):
+                lst5.append(lst.index(5))
+            for i in range(n7):
+                lst7.append(lst.index(7))
+            res = []
+            if len(lst0)>1:
+                m1 = 2*len(n)-lst0[-1]-lst0[-2]-3
+                res.append(m1)
+            if len(lst0)>0 and len(lst5)>0:
+                m2 = 2*len(n)-lst0[-1]-lst5[-1]-3
+                res.append(m2)
+            if len(lst2)>0 and len(lst5)>0:
+                m3 = 2*len(n)-lst2[-1]-lst5[-1]-3
+                res.append(m3)
+            if len(lst5)>0 and len(lst7)>0:
+                m4 = 2*len(n)-lst5[-1]-lst7[-1]-3
+                res.append(m4)
+            print(min(res))
+        else:
+            print(-1)
