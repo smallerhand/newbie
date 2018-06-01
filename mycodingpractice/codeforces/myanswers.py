@@ -245,6 +245,9 @@ for i in range(n):
     elif i == n-1:
         print('NO')
 
+#122A. Lucky Division
+
+
 #131A. cAPS lOCK (wrong)
 s = input()
 alp='abcdefghijklmnopqrstuvwxyz'
@@ -281,3 +284,18 @@ else:
             break;
 
         
+#133A. HQ9+(Wrong)
+p = input()
+result = False
+if 'H' in p:
+    result = True
+elif 'Q' in p:
+    result = True
+elif '9' in p:
+    result = True
+elif '+' in p:
+    result = True    
+if result == True:
+    print('YES')
+else:
+    print('NO')
