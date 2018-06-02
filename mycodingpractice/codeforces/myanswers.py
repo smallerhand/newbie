@@ -295,19 +295,24 @@ else:
             print(s)
             break;
 
+#131A. cAPS lOCK 위 답안 왜 틀렸는지 모르겠어서 다른 방법으로 
+s = input()
+l = len(s)
+if l == 0:
+    print(s)
+elif l == 1 and s.islower():
+    print(s.upper())
+elif s.isupper():
+    print(s.lower())
+elif s[0].islower() and s[1:].isupper():
+    print(s[0].upper()+s[1:].lower())
+else:
+    print(s)
+    
         
-#133A. HQ9+(Wrong)
+#133A. HQ9+
 p = input()
-result = False
-if 'H' in p:
-    result = True
-elif 'Q' in p:
-    result = True
-elif '9' in p:
-    result = True
-elif '+' in p:
-    result = True    
-if result == True:
+if 'H' in p or 'Q' in p or '9' in p:
     print('YES')
 else:
     print('NO')
@@ -399,3 +404,23 @@ else:
             print(min(res))
         else:
             print(-1)
+
+#160A. Twins
+n = int(input())
+a = input().split(' ')
+lst = [int(i) for i in a]
+
+sorted_lst=sorted(lst)
+
+mine = 0
+yours = sum(sorted_lst)
+
+for i in range(n):
+    mine += sorted_lst[-1]
+    yours -= sorted_lst[-1]
+    del sorted_lst[-1]
+    if mine > yours:
+        print(i+1)
+        break;
+    
+#236A. Boy or Girl
