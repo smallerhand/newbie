@@ -431,5 +431,11 @@ if len(distinct_s) % 2 == 0:
 else:
     print('IGNORE HIM!')
 
-
+#546A. Soldier and Bananas
+k, n, w = map(int, input().split(' '))
+output = -n
+sums = (1+w)*w/2
+output += sums * k
+output = max(output, 0)
+print(int(output))
 
