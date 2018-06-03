@@ -424,3 +424,12 @@ for i in range(n):
         break;
     
 #236A. Boy or Girl
+s = input()
+distinct_s = set(s)
+if len(distinct_s) % 2 == 0:
+    print('CHAT WITH HER!')
+else:
+    print('IGNORE HIM!')
+
+
+
