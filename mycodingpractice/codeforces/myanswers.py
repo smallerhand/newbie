@@ -485,6 +485,6 @@ else:
     print(s)
 
 #41A. Translation
-    
+
 
 
