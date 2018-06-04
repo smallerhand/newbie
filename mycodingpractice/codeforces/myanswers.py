@@ -440,7 +440,35 @@ output = max(output, 0)
 print(int(output))
 
 #69A. Young Physicist
+n = int(input())
+X, Y, Z = 0, 0, 0
+for i in range(n):
+    x, y, z = map(int, input().split(' '))
+    X += x; Y += y; Z += z;
+if [X, Y, Z] == [0,0,0]:
+    print('YES')
+else:
+    print('NO')
+    
+#467A. George and Accommodation
+n = int(input())
+output = 0
+for i in range(n):
+    p, q=map(int, input().split(' '))
+    if q - p >= 2:
+        output += 1
+print(output)
+    
+#110A. Nearly Lucky Number
+n = input()
+count = 0
+for i in n:
+    if i in ['4','7']:
+        count += 1
+if count in [4, 7]:
+    print('YES')
+else:
+    print('NO')
 
-
-
+#
 
