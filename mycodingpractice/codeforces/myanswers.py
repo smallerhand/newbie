@@ -470,5 +470,21 @@ if count in [4, 7]:
 else:
     print('NO')
 
-#
+#266B. Queue at the School
+n, t = map(int, input().split(' '))
+s = input()
+if n == 1:
+    print(s)
+else:
+    for j in range(t):
+        lst = s.split('BG')
+        output = ''
+        for i in lst:
+            output += i + 'GB'
+        s = output[:n]
+    print(s)
+
+#41A. Translation
+    
+
 
