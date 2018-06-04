@@ -439,3 +439,8 @@ output += sums * k
 output = max(output, 0)
 print(int(output))
 
+#69A. Young Physicist
+
+
+
+
