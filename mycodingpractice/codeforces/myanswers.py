@@ -485,6 +485,21 @@ else:
     print(s)
 
 #41A. Translation
+s = input()
+t = input()
+s2 = ''
+for i in range(len(s)):
+    s2 += s[-1-i]
+if s2 == t:
+    print('YES')
+else:
+    print('NO')
 
+#271A. Beautiful Year
+y = int(input())
+y2 = y + 1
+while len(set([i for i in str(y2)])) < 4:
+    y2 += 1
+print(y2)
 
 
